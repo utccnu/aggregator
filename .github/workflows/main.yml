@@ -1,8 +1,8 @@
-name: Get Subscription Weekly
+name: update subscription
 
 on:
   schedule:
-    - cron: '0 16 * * 6'  # 北京时间每周日凌晨执行
+    - cron: '0 6,18 * * *' # 每隔 12 小时执行一词
   workflow_dispatch: # 允许手动触发
 
 permissions:
